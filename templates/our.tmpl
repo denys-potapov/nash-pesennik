@@ -75,7 +75,7 @@
   \iflilypond%
   \IfFileExists{\getLibraryLilypondDirectory/#1.pdf}{\includegraphics{#1}}{}%
   \fi%
-}
+}          
 
 \definecolor{SongNumberBgColor}{HTML}{\getsongnumberbgcolor}
 \definecolor{NoteBgColor}{HTML}{\getnotebgcolor}
@@ -92,9 +92,10 @@
 % Customization of the page appearance
 \RequirePackage[
   a4paper % paper size
+  ,twoside
   ,includeheadfoot % include header and footer into text size
-  ,hmarginratio=1:1 % ratio between inner and outer margin (default)
-  ,outer=1.8cm % outer margin (right)
+  ,hmarginratio=3:2 % ratio between inner and outer margin (default)
+  ,outer=1.5cm % outer margin (right)
   ,vmarginratio=1:1 % ratio between top and bottom margin
   ,bmargin=1.3cm % bottom margin
 % ,bindingoffset=1.7cm % space reserved to bound pages together
